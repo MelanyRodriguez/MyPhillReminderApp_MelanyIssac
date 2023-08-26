@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyPhillReminderApp_MelanyIssac.Views.StartPage" BackgroundImageSource="AppLoginBG">
+    <ContentPage.Content>
+        <ScrollView>
+            <FlexLayout Direction="Column" Padding="40,50">
+
+                <Label x:Name="LblUserName"
+                       TextColor="White" FontSize="20"
+                       HorizontalTextAlignment="Center" Padding="0,0,0,30"/>
+
+                <Label Text="SELECT AN ACTION..."
+                       TextColor="Black" FontSize="20"
+                       HorizontalTextAlignment="Center" Padding="0,0,0,20"/>
+
+                    <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="0" Grid.Row="0"
+                     x:Name="BtnPhillReminderManagment" Text="Phill Reminder"
+                     BackgroundColor="HotPink" TextColor="Black"
+                     HeightRequest="150" WidthRequest="100"
+                     CornerRadius="25" BorderColor="Gold" BorderWidth="2" Clicked="BtnPhillReminderManagment_Clicked"/>
+
+                    <Button Grid.Column="1" Grid.Row="0"
+                     x:Name="BtnUserManagment" Text="User Managment"
+                     BackgroundColor="Aqua" TextColor="Black"
+                     HeightRequest="150" WidthRequest="100"
+                     CornerRadius="25" BorderColor="Gold" BorderWidth="2" Clicked="BtnUserManagment_Clicked"/>
+
+                    <Button Grid.Column="0" Grid.Row="1"
+                     x:Name="BtnCategoryReminder" Text="Category Reminder"
+                     BackgroundColor="Salmon" TextColor="Black"
+                     HeightRequest="150" WidthRequest="100"
+                     CornerRadius="25" BorderColor="Gold" BorderWidth="2"/>
+
+                    <Button Grid.Column="1" Grid.Row="1"
+                     x:Name="BtnStepsReminder" Text="Steps Reminder"
+                     BackgroundColor="Lavender" TextColor="Black"
+                     HeightRequest="150" WidthRequest="100"
+                     CornerRadius="25" BorderColor="Gold" BorderWidth="2"/>
+
+
+
+
+
+                </Grid>
+                    
+            </FlexLayout>
+            </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
